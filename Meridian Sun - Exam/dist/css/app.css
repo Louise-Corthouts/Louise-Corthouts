@@ -1,0 +1,173 @@
+/* ./src/scss/app.scss Fichier de surcharge */
+/* ./src/scss/ieps_framework/_variables.css Variables du framework IEPS CSS */
+/* SPECIFICATIONS GENERALES */
+body { font-family: "MerriweatherRegular", serif; color: #6b6b6b; background-image: url("../../images/bg1.jpg"); }
+
+body h2, body h3 { font-family: "Market Deco"; color: #b05a5a; margin-bottom: 0; padding-bottom: .25em; }
+
+body p { text-align: justify; }
+
+body .icone { vertical-align: bottom; font-size: 1em; }
+
+body li { list-style: none; }
+
+body li a { text-decoration: none; }
+
+.video { width: 100%; position: relative; filter: grayscale(100%); }
+
+.audio { width: 90%; height: 100%; border: 0; }
+
+iframe { border: 0; }
+
+hr { border-top: 1px dashed #ccc; border-bottom: none; width: 90%; margin: 3% 3% 3% 4.5%; }
+
+/* OBJETS PARTICULIERS */
+header .mHeader h1 { margin-left: 5%; font-family: 'Kaushan Script', cursive; font-size: 2em; }
+
+header .mHeader h1 a { text-decoration: none; color: #6b6b6b; }
+
+header .mHeader .mHeaderDiv { text-align: end; margin-top: 2.5rem; margin-right: 5%; }
+
+header .mHeader .mHeaderDiv .mHeaderSearch { vertical-align: top; padding-top: 3px; padding-bottom: 1.5px; width: 15%; }
+
+header .mHeader .mHeaderDiv .iconeSearch { vertical-align: top; color: white; background: #191919; margin-left: -1em; font-size: 1em; padding: .8%; }
+
+header p { text-align: center; margin: 2rem; }
+
+.sHeader h1 { text-align: center; margin: 1em; font-family: 'Kaushan Script', cursive; color: grey; font-size: 2em; }
+
+.sHeader h1 a { text-decoration: none; color: #6b6b6b; }
+
+.sHeader .sHeaderDiv { text-align: center; margin: 1em; }
+
+.sHeader .sHeaderDiv .sHeaderSearch { vertical-align: top; margin-bottom: 2rem; width: 40%; }
+
+.sHeader .sHeaderDiv .iconeSearch { vertical-align: top; color: white; background: #191919; margin-left: -1em; font-size: 1em; padding: .7%; }
+
+.sHeader .selectMenu { text-align: center; }
+
+.sHeader .selectMenu .select { width: 50%; }
+
+.menu { display: flex; justify-content: center; padding: 0; }
+
+.menu li { list-style: none; }
+
+.menu li a { font-family: "Market Deco"; text-decoration: none; color: white; padding: 1em; }
+
+.chemin ul { display: flex; justify-content: center; align-items: center; padding: 1em 1em 0 1em; }
+
+.chemin ul li a { color: #b05a5a; }
+
+.chemin ul li:last-of-type a { color: #6b6b6b; }
+
+.chemin ul li:last-of-type p { padding: 0; }
+
+footer { background: #1e1e1e; }
+
+footer section { padding: 2em; color: #999; }
+
+footer section div ul { padding: 0; }
+
+footer section div ul li { list-style: inside; }
+
+footer section div ul li a { text-decoration: none; color: #999; }
+
+footer section div .tag { margin: 0; padding: 0; padding-right: 3em; }
+
+footer section div .tag li { list-style: none; padding: 0; }
+
+footer section div .tag li .bigTag { font-size: 2em; }
+
+footer section div .tag li .mediumTag { font-size: 1.5em; }
+
+footer section div hr { border-top: 1px dashed #484848; border-bottom: none; margin: 1em 0 1em 0; width: 80%; }
+
+footer section div input { background: #191919; border: none; padding: .5em .5em .5em .4em; }
+
+footer .copy { background: #191919; padding: 2%; text-align: center; }
+
+article h2 { text-align: center; }
+
+article h2 a { text-decoration: none; color: #b05a5a; }
+
+article ul { margin-top: 0; padding: 0; text-align: center; }
+
+article ul li { display: inline-block; border-right: 1px solid #a0a0a0; color: #a0a0a0; padding: 0 10px; }
+
+article ul li:last-of-type { border-right: none; }
+
+article div { text-align: center; }
+
+article div img { width: 100%; }
+
+article div p { padding: 1em 3em 0 3em; }
+
+.btns { text-align: center; margin-bottom: 2em; }
+
+.btns .btn { color: white; background: linear-gradient(#6b6b6b, #454545); border: 1px solid #191919; border-radius: 10%; text-align: center; text-decoration: none; font-size: 11px; width: 2em; height: 2em; }
+
+.btns .btn:hover { background: linear-gradient(#191919, #454545); }
+
+.mainAbout h2 { text-align: center; }
+
+.mainAbout figure { margin: 0; }
+
+.mainAbout figure img { width: 100%; padding: 0 5%; }
+
+.mainAbout .articleAbout { padding: 0 5%; }
+
+.mainContact h2 { text-align: center; margin: 1em 0; }
+
+.mainContact iframe { width: 100%; }
+
+.mainContact section { padding: 0 3%; }
+
+.mainContact .formulaire { background: #ededed; margin: 3%; padding: 0; }
+
+.mainContact .formulaire form ul { padding: 1em 0; }
+
+.mainContact .formulaire form ul li { padding: 0 0 1em 1em; }
+
+.mainContact .formulaire form ul li input { font-family: "MerriweatherRegular", serif; padding: .5%; width: 80%; }
+
+.mainContact .formulaire form ul li textarea { width: 90%; height: 15em; }
+
+.mainContact .formulaire form ul li:last-of-type { padding-bottom: 0; width: 10%; }
+
+.mainContact .formulaire form ul li:last-of-type input { width: auto; padding: 5%; color: white; background: linear-gradient(#6b6b6b, #454545); border: 1px solid #191919; border-radius: 10%; text-align: center; text-decoration: none; }
+
+.mainContact .formulaire form ul li:last-of-type input:hover { background: linear-gradient(#191919, #454545); }
+
+article div img { width: 100%; }
+
+article .hashtag ul { display: flex; padding: 0 2.5em; }
+
+article .hashtag ul li { border: none; padding-right: 0; }
+
+article .hashtag ul li a { color: #a0a0a0; }
+
+.btnPage { display: flex; justify-content: center; }
+
+.btnPage button { width: auto; margin-right: 1%; padding: .5%; color: white; background: linear-gradient(#6b6b6b, #454545); border: 1px solid #191919; border-radius: 10%; text-align: center; text-decoration: none; }
+
+.btnPage button:hover { background: linear-gradient(#191919, #454545); }
+
+.relatedPost h2 { padding-left: 2%; }
+
+.relatedPost .post { padding: 5%; }
+
+.relatedPost .post img { width: 100%; }
+
+.relatedPost .post iframe { width: 100%; height: 66%; filter: grayscale(100%); }
+
+.relatedPost .post ul { display: flex; padding: 0; color: #6b6b6b; align-items: center; }
+
+.relatedPost .post ul li { border-right: 1px solid grey; display: flex; line-height: 1em; color: #a0a0a0; }
+
+.relatedPost .post ul li:last-child { border-right: none; }
+
+.relatedPost .post ul li .icone { margin: 0 5px; }
+
+.relatedPost .post ul li time { margin: 0 5px; }
+
+.relatedPost .post ul li p { margin: 0; padding: 0 .5em; }

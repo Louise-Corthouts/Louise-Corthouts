@@ -1,0 +1,49 @@
+/*
+  ./src/scss/ieps_framework/modules/_utils.scss
+  Module des Utilitaires
+*/
+
+// ELEMENTS STICKY
+.sticky {
+  position: sticky;
+  top: 0;
+  .trigger {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+  }
+  &.sticked {
+    // ...
+  }
+}
+
+// BANDEAU
+
+.bandeau {
+  background: #b05a5a;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  width: calc(100% + 1em + 10px);
+  position: relative;
+  left: calc(-.5em - 5px);
+}
+.bandeau:before, .bandeau:after {
+  content: '';
+  display: block;
+  background: darken(#b05a5a, 5%);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -10px;
+  z-index: -1;
+}
+.bandeau:before {
+  left: 0;
+  transform: skewY(45deg);
+}
+.bandeau:after {
+  right: 0;
+  transform: skewY(-45deg);
+}

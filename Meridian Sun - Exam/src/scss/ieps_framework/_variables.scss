@@ -1,0 +1,73 @@
+/*
+  ./src/scss/ieps_framework/_variables.css
+  Variables du framework IEPS CSS
+ */
+
+ // COULEURS --------------------------------------
+   $couleur1: #6b6b6b;
+   $couleur2: #b05a5a;
+   $couleur3: #999;
+   $couleur4: #2e2e2e;
+   $couleur5: #191919;
+   $couleur6: #a0a0a0;
+
+  // MODULE DES BOITES ----------------------------
+    $boiteFixeDimension: 1200px;
+
+  // MODULE DE LA GRILLE --------------------------
+    $grilleNombreColonnes: 12;
+    $grilleGouttiere:      1em;
+
+    $breakpoints: (
+        'xs' : '0',
+        's'  : '600px',
+        'm'  : '800px',
+        'l'  : '1000px',
+        'xl' : '1200px',
+        );
+
+  // MODULE DES MENUS -----------------------------
+    // MENU HORIZONTAL
+    // Le menu
+    $menuHorizLiensAlignement: space-between;
+    $menuHorizLiensGrow: 1;
+    $menuHorizLiensMarge: 1px;
+    $menuHorizLiensTexteAlignement: center;
+
+    // Les liens
+    $menuHorizLiensFondCouleur: $couleur1;
+    $menuHorizLiensTexteCouleur: #eee;
+    $menuHorizLiensPadding: 1em;
+    $menuHorizLiensHoverFondCouleur: darken($couleur1, 5%);
+    $menuHorizLiensHoverTexteCouleur: #fff;
+    $menuHorizLiensActifFondCouleur: darken($couleur1, 20%);
+    $menuHorizLiensActifTexteCouleur: #fff;
+
+    // Les sous-menus dropdown
+    $menuDropDownLiensFondCouleur: lighten($couleur1, 25%);
+    $menuDropDownLiensTexteCouleur: #fff;
+    $menuDropDownLiensPadding: 1em;
+    $menuDropDownLiensHoverFondCouleur: lighten($couleur1, 10%);
+    $menuDropDownLiensHoverTexteCouleur: #fff;
+
+    // MENU SLIDER
+    // Le bouton
+    $menuSliderBtnTop: 1em;
+    $menuSliderBtnLeft: 4em;
+    $menuSliderBtnFondCouleur: $couleur1;
+    $menuSliderBtnTexteCouleur: #eee;
+    $menuSliderBtnPadding: .5em;
+    $menuSliderBtnHoverFondCouleur: darken($couleur1, 10%);
+    $menuSliderBtnHoverTexteCouleur: #fff;
+
+    // Le menu
+    $menuSliderMenuFondCouleur: #aaa;
+    $menuSliderMenuLargeur: 200px;
+    $menuSliderMenuHauteur: 100vh;
+
+    // Les liens
+    $menuSliderLiensFondCouleur: #ccc;
+    $menuSliderLiensTexteCouleur: #eee;
+    $menuSliderLiensPadding: .5em;
+    $menuSliderLiensHoverFondCouleur: #aaa;
+    $menuSliderLiensHoverTexteCouleur: #fff;

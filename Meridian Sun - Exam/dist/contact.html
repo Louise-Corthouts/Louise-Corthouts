@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Meridian Sun</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/ieps_framework/index.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+  <main class="boite-fixe">
+
+    <!-- HEADER -->
+    <header>
+
+      <!-- HEADER A PARTIR DE MEDIUM -->
+      <section class="grille mHeader">
+        <div class="m-visible m6">
+          <h1><a href="index.html">The Meridian Sun</a></h1>
+        </div>
+
+        <div class="mHeaderDiv m-visible m6">
+          <img src="../images/icon-rss.png" alt="rss">
+          <img src="../images/icon-facebook.png" alt="facebook">
+          <img src="../images/icon-twitter.png" alt="twitter">
+          <img src="../images/icon-dribbble.png" alt="dribbble">
+          <img src="../images/icon-linkedin.png" alt="linkedin">
+          <img src="../images/icon-pinterest.png" alt="pinterest">
+          <input class="mHeaderSearch" type="text" name="search" placeholder="Search">
+          <i class="iconeSearch material-icons-outlined">search</i>
+        </div>
+      </section>
+
+      <!-- HEADER EN DESSOUS DE MEDIUM -->
+      <section class="sHeader m-cache xs12">
+        <div>
+          <h1><a href="index.html">The Meridian Sun</a></h1>
+        </div>
+
+        <div class="sHeaderDiv xs12">
+          <div>
+            <input class="sHeaderSearch" type="text" name="search" placeholder="Search">
+            <i class="iconeSearch material-icons-outlined">search</i>
+          </div>
+            <img src="../images/icon-rss.png" alt="rss">
+            <img src="../images/icon-facebook.png" alt="facebook">
+            <img src="../images/icon-twitter.png" alt="twitter">
+            <img src="../images/icon-dribbble.png" alt="dribbble">
+            <img src="../images/icon-linkedin.png" alt="linkedin">
+            <img src="../images/icon-pinterest.png" alt="pinterest">
+        </div>
+
+        <div class="selectMenu">
+          <select class="select" name="select" onchange="location = this.value;">
+            <option value="index.html">Blog</option>
+            <option value="about.html">About</option>
+            <option value="contact.html">Contact</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- MENU BANDEAU -->
+      <div class="bandeau m-visible">
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- CHEMIN DE PAGES -->
+      <div class="chemin">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><p>/</p></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <hr />
+    </header>
+
+    <!-- CONTACT CONTENT -->
+    <section class="mainContact">
+      <h2>Contact</h2>
+
+      <!-- CARTE GOOGLE -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.8568383384127!2d5.680495615791671!3d50.611197679497835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f41c3d702da7%3A0x2d5b3cb7b45da7ab!2sIEPS%20Fl%C3%A9ron!5e0!3m2!1sfr!2sbe!4v1586340743945!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+      <section>
+        <h3>Feel free to drop me a line</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates odio ut laborum nam voluptas, officiis iste perferendis doloribus explicabo eveniet, laudantium quisquam cupiditate quaerat obcaecati reiciendis modi voluptatem quo illum.</p>
+      </section>
+
+      <!-- FORMULAIRE -->
+      <section class="formulaire">
+        <form action="traitement.html" method="get" enctype="multipart/form-data">
+          <ul>
+            <li>
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="Name (Required)" />
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="text" name="email" id="email" placeholder="Email (Required)" />
+            </li>
+            <li>
+              <label for="subject"></label>
+              <input type="text" name="subject" id="subject" placeholder="Subject" />
+            </li>
+            <li>
+              <label for="commentaire"></label>
+              <textarea name="commentaire" id="commentaire" ></textarea>
+            </li>
+            <li>
+              <input type="submit" value="Submit" />
+            </li>
+          </ul>
+        </form>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="grille">
+        <div class="m3">
+          <div>
+            <h3>Search</h3>
+            <input type="text" name="search" placeholder="Search">
+          </div>
+
+          <div>
+            <h3>Recent Posts</h3>
+            <ul>
+              <li><a href=""></a>A Wonderful complexity</li>
+              <li><a href=""></a>The Meridian Sun</li>
+              <li><a href=""></a>Gallery Format</li>
+              <li><a href=""></a>John Doe</li>
+              <li><a href=""></a>A Day In The Life</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="m3">
+          <h3>Twitter</h3>
+          <hr />
+          <div>→ Follow @iepsdesign</div>
+        </div>
+
+        <div class="m3">
+          <h3>Tags</h3>
+          <ul class="tag">
+            <li>
+              <a href="">blogroll</a>
+              <a href="" class="bigTag">daily</a>
+              <a href="">dialog</a>
+              <a href="">gallery</a>
+              <a href="">journal</a>
+              <a href="">link</a>
+              <a href="">motion</a>
+              <a href="">music</a>
+              <a href="" class="bigTag">photo</a>
+              <a href="" class="mediumTag">professional</a>
+              <a href="">quotation</a>
+              <a href="">show</a>
+              <a href="">sound</a>
+              <a href="">tv</a>
+              <a href="">video</a>
+            </li>
+          </ul>
+
+          <div>
+            <h3>Archives</h3>
+            <ul>
+              <li><a href="">May 2020</a></li>
+              <li><a href="">April 2020</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="m3">
+          <h3>About</h3>
+          <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+          <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+        </div>
+      </section>
+
+      <div class="copy">
+        Copyright 2020 - The Meridian Sun
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

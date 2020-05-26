@@ -1,0 +1,446 @@
+/*
+  ./src/scss/app.scss
+  Fichier de surcharge
+*/
+@import 'ieps_framework/variables';
+
+/*
+  SPECIFICATIONS GENERALES
+*/
+
+body {
+  font-family: "MerriweatherRegular", serif;
+  color: $couleur1;
+  background-image: url("../../images/bg1.jpg");
+  h2, h3 {
+    font-family: "Market Deco";
+    color: $couleur2;
+    margin-bottom: 0;
+    padding-bottom: .25em;
+  }
+  p {
+    text-align: justify;
+  }
+  .icone {
+    vertical-align: bottom;
+    font-size: 1em;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  filter: grayscale(100%);
+}
+
+.audio {
+  width: 90%;
+  height: 100%;
+  border: 0;
+}
+
+iframe {
+  border: 0;
+}
+
+hr {
+	border-top: 1px dashed #ccc;
+  border-bottom: none;
+  width: 90%;
+  margin: 3% 3% 3% 4.5%;
+}
+
+/*
+  OBJETS PARTICULIERS
+*/
+
+// POUR TOUTES LES PAGES
+
+// HEADER À PARTIR DE MEDIUM
+header {
+  .mHeader {
+    h1 {
+      margin-left: 5%;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2em;
+      a {
+        text-decoration: none;
+        color: $couleur1;
+      }
+    }
+    .mHeaderDiv {
+      text-align: end;
+      margin-top: 2.5rem;
+      margin-right: 5%;
+      .mHeaderSearch {
+        vertical-align: top;
+        padding-top: 3px;
+        padding-bottom: 1.5px;
+        width: 15%;
+      }
+      .iconeSearch {
+        vertical-align: top;
+        color: white;
+        background: $couleur5;
+        margin-left: -1em;
+        font-size: 1em;
+        padding: .8%;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    margin: 2rem;
+  }
+}
+
+// HEADER EN DESSOUS DE MEDIUM
+.sHeader {
+  h1 {
+    text-align: center;
+    margin: 1em;
+    font-family: 'Kaushan Script', cursive;
+    color: grey;
+    font-size: 2em;
+    a {
+      text-decoration: none;
+      color: $couleur1;
+    }
+  }
+  .sHeaderDiv {
+    text-align: center;
+    margin: 1em;
+    .sHeaderSearch {
+      vertical-align: top;
+      margin-bottom: 2rem;
+      width: 40%;
+    }
+    .iconeSearch {
+      vertical-align: top;
+      color: white;
+      background: $couleur5;
+      margin-left: -1em;
+      font-size: 1em;
+      padding: .7%;
+    }
+  }
+  .selectMenu {
+    text-align: center;
+    .select {
+      width: 50%;
+    }
+  }
+}
+
+// MENU BANDEAU
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  li {
+    list-style: none;
+    a {
+      font-family: "Market Deco";
+      text-decoration: none;
+      color : white;
+      padding: 1em;
+    }
+  }
+}
+
+// CHEMIN DE PAGES
+.chemin {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 0 1em;
+    li {
+      a {
+        color: $couleur2;
+      }
+    }
+    li:last-of-type {
+      a {
+        color: $couleur1;
+      }
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background: lighten($couleur5, 2%);
+  section {
+    padding: 2em;
+    color: $couleur3;
+    div {
+      ul {
+        padding: 0;
+        li {
+          list-style: inside;
+          a {
+            text-decoration: none;
+            color: $couleur3;
+          }
+        }
+      }
+      .tag {
+        margin: 0;
+        padding: 0;
+        padding-right: 3em;
+        li {
+          list-style: none;
+          padding: 0;
+          .bigTag {
+            font-size: 2em;
+          }
+          .mediumTag {
+            font-size: 1.5em;
+          }
+        }
+      }
+      hr {
+        border-top: 1px dashed lighten($couleur4, 10%);
+        border-bottom: none;
+        margin: 1em 0 1em 0;
+        width: 80%;
+      }
+      input {
+        background: $couleur5;
+        border: none;
+        padding: .5em .5em .5em .4em;
+      }
+    }
+  }
+  .copy {
+    background: $couleur5;
+    padding: 2%;
+    text-align: center;
+  }
+}
+
+// INDEX.HTML
+
+// ARTICLE INDEX
+article {
+  h2 {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color:$couleur2;
+    }
+  }
+  ul {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      border-right: 1px solid $couleur6;
+      color: $couleur6;
+      padding: 0 10px;
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+  }
+  div {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    p {
+      padding: 1em 3em 0 3em;
+    }
+  }
+}
+
+// BOUTONS
+.btns {
+  text-align: center;
+  margin-bottom: 2em;
+  .btn {
+    color: white;
+    background: linear-gradient($couleur1, darken($couleur1, 15%));
+    border: 1px solid $couleur5;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    width: 2em;
+    height: 2em;
+    &:hover {
+      background: linear-gradient($couleur5, darken($couleur1, 15%));
+    }
+  }
+}
+
+// ABOUT.HTML
+
+// MAIN ABOUT
+.mainAbout {
+  h2 {
+    text-align: center;
+  }
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+      padding: 0 5%;
+    }
+  }
+  .articleAbout {
+    padding: 0 5%;
+  }
+}
+
+// CONTACT.HTML
+
+// MAIN CONTACT
+.mainContact {
+  h2 {
+    text-align: center;
+    margin: 1em 0;
+  }
+  iframe {
+    width: 100%;
+  }
+  section {
+    padding: 0 3%;
+  }
+  .formulaire {
+    background: lighten($couleur6, 30%);
+    margin: 3%;
+    padding: 0;
+    form {
+      ul {
+        padding: 1em 0;
+        li {
+          padding: 0 0 1em 1em;
+          input {
+            font-family: "MerriweatherRegular", serif;
+            padding: .5%;
+            width: 80%;
+          }
+          textarea {
+            width: 90%;
+            height: 15em;
+          }
+        }
+        li:last-of-type {
+          padding-bottom: 0;
+          width: 10%;
+          input {
+            width: auto;
+            padding: 5%;
+            color: white;
+            background: linear-gradient($couleur1, darken($couleur1, 15%));
+            border: 1px solid $couleur5;
+            border-radius: 10%;
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+              background: linear-gradient($couleur5, darken($couleur1, 15%));
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// POST.HTML
+
+// MAIN POST
+article {
+  div {
+    img {
+      width: 100%;
+    }
+  }
+  .hashtag {
+    ul {
+      display: flex;
+      padding: 0 2.5em;
+      li {
+        border: none;
+        padding-right: 0;
+        a {
+          color: $couleur6;
+        }
+      }
+    }
+  }
+}
+
+.btnPage {
+  display: flex;
+  justify-content: center;
+  button {
+    width: auto;
+    margin-right: 1%;
+    padding: .5%;
+    color: white;
+    background: linear-gradient($couleur1, darken($couleur1, 15%));
+    border: 1px solid $couleur5;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: linear-gradient($couleur5,
+      darken($couleur1, 15%));
+    }
+  }
+}
+
+.relatedPost {
+  h2 {
+    padding-left: 2%;
+  }
+  .post {
+    padding: 5%;
+    img {
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 66%;
+      filter: grayscale(100%);
+    }
+    ul {
+      display: flex;
+      padding: 0;
+      color: $couleur1;
+      align-items: center;
+      li {
+        border-right: 1px solid grey;
+        display: flex;
+        line-height: 1em;
+        color: $couleur6;
+        &:last-child {
+          border-right: none;
+        }
+        .icone {
+          margin: 0 5px;
+        }
+        time {
+          margin: 0 5px;
+        }
+        p {
+          margin: 0;
+          padding: 0 .5em;
+        }
+      }
+    }
+  }
+}
